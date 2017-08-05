@@ -30,7 +30,11 @@ body {
 	color: #fffcf1;
 	background: #7d5034;
 }
-
+/*
+.jumbotron .btn {
+	margin-top: 2.5em;
+}
+*/
 .address {
 	font-size: 80%;
 	margin: 0px;
