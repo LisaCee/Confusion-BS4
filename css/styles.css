@@ -40,3 +40,18 @@ body {
 	margin: 0px;
 	color: #6b4226;
 }
+
+.carousel {
+	background: #e38d52;
+}
+
+.carousel-item {
+	height: 250px;
+}
+
+.carousel-item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 250px;
+}
