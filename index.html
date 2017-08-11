@@ -222,6 +222,14 @@
                     <a class = "carousel-control-next" href = "#mycarousel" role = "button" data-slide = "next">
                         <span class = "carousel-control-next-icon"></span>
                     </a>
+                    <div class = "btn-group" id = "carouselButtons">
+                        <button class = "btn btn-danger btn-sm" id = "carousel-pause">
+                            <span class = "fa fa-pause"></span>
+                        </button>
+                        <button class = "btn btn-danger btn-sm" id = "carousel-play">
+                            <span class = "fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -399,6 +407,17 @@
        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+          <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 </body>
 
 </html>
