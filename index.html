@@ -9,14 +9,20 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!--build:css css/main.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "css/bootstrap-social.css">
+    <link rel = "stylesheet" href = "css/styles.css">
+    <!--endbuild-->
+
     <!--CDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"> -->
     <!--End CDN-->
 
-    <link rel = "stylesheet" href = "css/styles.css">
+
 
     <title>Ristorante Con Fusion</title>
 </head>
@@ -132,7 +138,7 @@
                             <input type = "radio" name = "section" id = "smoking" autocomplete = "off">Smoking
                         </label>
                      </div>
-                </div>    
+                </div>
 
                 <div class = "form-group row align-items-center">
 
@@ -161,7 +167,7 @@
                 </div>
             </form>
         </div>
-        </div>     
+        </div>
         </div>
         </div>
     </div>
@@ -394,34 +400,18 @@
         </div>
     </footer>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!--build:js js/main.js-->
        <script src="node_modules/jquery/dist/jquery.min.js"></script>
        <script src="node_modules/tether/dist/js/tether.min.js"></script>
        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+       <script src = "js/scripts.js"></script>
+    <!--endbuild-->
 
 <!--CDN-->
-       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+       <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
 
-            $("#carousel-button").click(function(){
-                if($("#carousel-button").children("span").hasClass("fa-pause"))
-                {
-                    $("#mycarousel").carousel('pause');
-                    $("#carousel-button").children("span").removeClass("fa-pause");
-                    $("#carousel-button").children("span").addClass("fa-play");
-                }
-                else if ($("#carousel-button").children("span").hasClass("fa-play"))
-                {
-                    $("#mycarousel").carousel('cycle');
-                    $("#carousel-button").children("span").removeClass("fa-play");
-                    $("#carousel-button").children("span").addClass("fa-pause");
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
