@@ -11,6 +11,23 @@ $carousel-item-height: 300px;
 	padding: $pad-up-dn $pad-left-right;
 }
 
+.modal-header {
+	background-color: $background-dark;
+	color: floralwhite;
+
+	.close {
+		color: floralwhite;
+	}
+}
+
+.modal-body {
+	background-color: $background-pale;
+}
+
+.modal-footer {
+	background-color: $background-light;
+}
+
 .row-header {
 	@include zero-margin(0px, 0px);
 }

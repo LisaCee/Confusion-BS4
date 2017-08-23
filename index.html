@@ -42,7 +42,7 @@
                     <li class = "nav-item"><a class = "nav-link" href = "contactus.html"><span class = "fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class = "navbar-text">
-                    <a data-toggle = "modal" data-target = "#loginModal">
+                    <a id = "loginModalButton">
                         <span class = "fa fa-sign-in"></span>Login
                     </a>
                 </span>
@@ -55,7 +55,7 @@
             <div class = "modal-content">
                 <div class = "modal-header">
                     <h4 class="modal-title">Login </h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close closeLogin">&times;</button>
                 </div>
                 <div class = "modal-body">
                 <form class="form-inline">
@@ -75,19 +75,19 @@
                 </form>
                 </div>
                 <div class = "modal-footer">
-                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default btn-sm closeLogin">Cancel</button>
                     <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id = "reservemodal" class = "modal fade" role = "dialog">
+    <div id = "reserveModal" class = "modal fade" role = "dialog">
         <div class = "modal-dialog" role = "content">
             <div class = "modal-content">
                 <div class = "modal-header">
                     <h4 class = "modal-title">Reserve a Table</h4>
-                        <button type = "button" class = "close" data-dismiss = "modal">&times;</button>
+                        <button type = "button" class = "close closeReserve">&times;</button>
                 </div>
             <div class = "modal-body">
             <div class = "container-fluid">
@@ -162,7 +162,7 @@
                 </div>
 
                 <div class = "form-group offset-2">
-                    <button type = "button" class = "btn btn-secondary ml-2 col-sm-3" data-dismiss = "modal">Cancel</button>
+                    <button type = "button" class = "btn btn-secondary ml-2 col-sm-3 closeReserve">Cancel</button>
                     <button type = "submit" class = "btn btn-primary col-sm-3">Reserve</button>
                 </div>
             </form>
@@ -183,7 +183,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class = "col col-sm-3 align-self-center">
-                    <a data-toggle = "modal" data-target = "#reservemodal" role = "button" class = "btn btn-block btn-sm nav-link btn-warning">Reserve a Table</a>
+                    <a role = "button" class = "btn btn-block btn-sm nav-link btn-warning" id = "reserveModalButton">Reserve a Table</a>
                 </div>
             </div>
         </div>

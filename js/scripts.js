@@ -15,4 +15,20 @@ $(document).ready(function(){
             $("#carousel-button").children("span").addClass("fa-pause");
         }
     });
+
+    $("#loginModalButton").click(function(){
+        $("#loginModal").modal("toggle");
+    });
+    $(".closeLogin").click(function(){
+        $("#loginModal").modal("hide");
+    });
+
+
+    $("#reserveModalButton").click(function(){
+        $("#reserveModal").modal("toggle");
+    });
+    $(".closeReserve").click(function(){
+        $("#reserveModal").modal("hide");
+    });
+
 });

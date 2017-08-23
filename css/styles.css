@@ -1,3 +1,15 @@
+.modal-header {
+  background-color: #55341E;
+  color: floralwhite; }
+  .modal-header .close {
+    color: floralwhite; }
+
+.modal-body {
+  background-color: #ffedb7; }
+
+.modal-footer {
+  background-color: #7d5034; }
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
